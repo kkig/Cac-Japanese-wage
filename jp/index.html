@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta content="text/html" charset="utf-8">
+    <title>給与計算</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>お給料をチェック！</h1>
+
+      <div class="shift">
+        <h2>午&nbsp;&nbsp;&nbsp;前</h2>
+        <form class="card">
+          <div class="inputField">
+            <label>始業時間：
+              <input type="datetime-local" min="00:00" max="23:59" step="300" id="start">
+            </label><br/>
+            <label>終業時間：
+              <input type="datetime-local" min="00:00" max="23:59" step="300" id="end">
+            </label><br/>
+            <label>休憩開始：
+              <input type="datetime-local" min="00:00" max="23:59" step="300" id="lunchS">
+            </label><br/>
+            <label>休憩終了：
+              <input type="datetime-local" min="00:00" max="23:59" step="300" id="lunchE">
+            </label><br/>
+          </div>
+        </form>
+      </div>
+<!-- End of input field one-->
+      <div class="shift">
+        <h2>午&nbsp;&nbsp;&nbsp;後</h2>
+        <form class="card">
+          <div class="inputField">
+            <label>始業時間：
+              <input type="datetime-local" min="00:00" max="23:59" step="300" id="startTwo">
+            </label><br/>
+            <label>終業時間：
+              <input type="datetime-local" min="00:00" max="23:59" step="300" id="endTwo">
+            </label><br/>
+            <label>休憩開始：
+              <input type="datetime-local" min="00:00" max="23:59" step="300" id="lunchSTwo">
+            </label><br/>
+            <label>休憩終了：
+              <input type="datetime-local" min="00:00" max="23:59" step="300" id="lunchETwo">
+            </label><br/>
+          </div>
+          <label>時&nbsp;&nbsp;給：
+            <input type="tel" maxlength="5" id="wage">
+            円
+          </label><br/>
+        </form>
+      </div>
+<!-- Start input field two-->
+      <div class="commentPart">
+        <div class="totalTime">
+          <p id="result"></p>
+          <p id="earning"></p>
+          <p class="comment"></p>
+        </div>
+        <button id="button">計&nbsp;&nbsp;&nbsp;算</button>
+      </div>
+
+    </div>
+
+    <script src="./js/script.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
