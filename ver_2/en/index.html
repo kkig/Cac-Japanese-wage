@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta content="text/html" charset="utf-8">
+    <title>Calculate your wage!</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Check how much earned</h1>
+
+      <div class="shift">
+        <h2>AM</h2>
+        <form class="card">
+          <div class="inputField">
+            <label>Start Time:
+              <input type="datetime-local" min="00:00" max="23:59" step="300" id="start">
+            </label><br/>
+            <label>End Time:
+              <input type="datetime-local" min="00:00" max="23:59" step="300" id="end">
+            </label><br/>
+            <label>Break Start:
+              <input type="datetime-local" min="00:00" max="23:59" step="300" id="lunchS">
+            </label><br/>
+            <label>Break End:
+              <input type="datetime-local" min="00:00" max="23:59" step="300" id="lunchE">
+            </label><br/>
+          </div>
+        </form>
+      </div>
+<!-- End of input field one-->
+      <div class="shift">
+        <h2>PM</h2>
+        <form class="card">
+          <div class="inputField">
+            <label>Start Time:
+              <input type="datetime-local" min="00:00" max="23:59" step="300" id="startTwo">
+            </label><br/>
+            <label>End Time:
+              <input type="datetime-local" min="00:00" max="23:59" step="300" id="endTwo">
+            </label><br/>
+            <label>Break Start:
+              <input type="datetime-local" min="00:00" max="23:59" step="300" id="lunchSTwo">
+            </label><br/>
+            <label>Break End:
+              <input type="datetime-local" min="00:00" max="23:59" step="300" id="lunchETwo">
+            </label><br/>
+          </div>
+            <label>Wage:
+              <input type="tel" maxlength="5" id="wage">
+              yen
+            </label><br/>
+        </form>
+      </div>
+<!-- Start input field two-->
+      <div class="commentPart">
+        <div class="totalTime">
+          <p id="result"></p>
+          <p id="earning"></p>
+          <p class="comment"></p>
+        </div>
+        <button id="button">Calculate!</button>
+      </div>
+
+    </div>
+
+    <script src="./js/script.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

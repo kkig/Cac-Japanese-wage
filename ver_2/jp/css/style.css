@@ -1,0 +1,91 @@
+body {
+  background: #AADB1E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: auto;
+  padding: 10% 0;
+  font-size: 16px;
+  color: #444;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin: .5em 0;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+  padding: 5px 10px;
+}
+
+input[type="time"]::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+input[type="time"]::-webkit-clear-button{
+  -webkit-appearance: none;
+}
+
+input {
+  border: 1px solid lightgrey;
+  padding: 3px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+button {
+  background-color: #006CB0;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 40px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0 2.5px 5px rgba(0, 0, 0, .5);
+  transition: 0.6s;
+}
+
+button:hover {
+  box-shadow: 0 0 0;
+  transform: translate(0, 2px);
+}
+
+.commentPart {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.totalTime {
+  padding: 1em 2em;
+  text-align: left;
+}
+
+.wrapper {
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.card {
+  width: 400px;
+  background: white;
+}
+
+.inputField {
+  text-align: right;
+  padding-right: 1em;
+}
