@@ -3,16 +3,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
   width: auto;
   padding: 10% 0;
-  font-size: 16px;
   color: #444;
   font-family: 'Roboto', sans-serif;
+  min-height: 300px;
 }
 
 h1 {
-  margin-bottom: 2rem;
+  margin: 1.5rem 0;
+  font-size: 2rem;
 }
 
 h2 {
@@ -40,8 +40,8 @@ input[type="time"]::-webkit-clear-button{
 
 input {
   border: 1px solid lightgrey;
-  padding: 3px;
-  margin-bottom: 15px;
+  padding: .25rem;
+  margin-left: 1rem;
   font-size: 1rem;
   text-align: center;
 }
@@ -52,7 +52,7 @@ button {
   font-size: 1rem;
   font-weight: bold;
   padding: 10px 40px;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
   border-radius: 10px;
   border: 0;
   box-shadow: 0 2.5px 5px rgba(0, 0, 0, .5);
@@ -62,6 +62,14 @@ button {
 button:hover {
   box-shadow: 0 0 0;
   transform: translate(0, 2px);
+}
+
+.wrapper {
+
+}
+
+.shift {
+  margin-top: 1rem;
 }
 
 .commentPart {
@@ -78,11 +86,6 @@ button:hover {
   background: white;
   padding: 20px;
   text-align: center;
-}
-
-.card {
-  width: 400px;
-  background: white;
 }
 
 .inputField {

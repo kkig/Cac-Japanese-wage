@@ -4,17 +4,19 @@
     <meta content="text/html" charset="utf-8">
     <title>Calculate your wage!</title>
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
   </head>
   <body>
     <div class="wrapper">
-      <h1>Check how much earned</h1>
+      <h1 class="title">Check how much earned</h1>
 
       <div class="shift">
         <h2>AM</h2>
-        <form class="card">
+        <form class="container">
           <div class="inputField">
             <label>Start Time:
               <input type="datetime-local" min="00:00" max="23:59" step="300" id="start">
@@ -34,7 +36,7 @@
 <!-- End of input field one-->
       <div class="shift">
         <h2>PM</h2>
-        <form class="card">
+        <form class="container">
           <div class="inputField">
             <label>Start Time:
               <input type="datetime-local" min="00:00" max="23:59" step="300" id="startTwo">
